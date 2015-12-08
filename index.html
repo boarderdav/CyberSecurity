@@ -18,8 +18,8 @@
 </head>
 
 <body>
-<div style="background-color:#232323" class="navbar-wrapper">
-    <div class="container">
+<div style="background-color:#232323; border:none" class="navbar-wrapper">
+    <div class="container-fluid">
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -29,15 +29,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Cyber Security Project</a>
+                    <a class="navbar-brand" href="#" style="color:#5bb3b3;font-family:Avenir">Cyber Security Project</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">ClickJacking</a></li>
-                        <li><a href="#contact">Cross-Site Scripting</a></li>
-                        <li><a href="#contact">SQL Injection</a></li>
-                        <li class="dropdown">
+                        <li><a href="#jacking">ClickJacking</a></li>
+                        <li><a href="#cross-site-scripting">Cross-Site Scripting</a></li>
+                        <li><a href="#sql-injection">SQL Injection</a></li>
+                        <!--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
@@ -48,7 +48,7 @@
                                 <li><a href="#">Separated link</a></li>
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -61,12 +61,13 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
             <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="item">
+            <div class="item active">
                 <img class="first-slide" src="http://placehold.it/800x200/333333/333333" width="100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
@@ -76,33 +77,33 @@
                     </div>
                 </div>
             </div>
-            <div class="item active">
-                <img class="second-slide" src="http://placehold.it/800x200/555555/555555" width="100%" alt="Second slide">
+            <div class="item">
+                <img class="second-slide" src="img/sh3.jpg" width="100%" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Click Jacking Example</h1>
+                        <h1>Click Jacking</h1>
                         <p>Clickjacking is a malicious technique that consists of deceiving a web user into interacting with something different to what the user believes they are interacting with.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more about Clickjacking</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#jacking" role="button">Learn more about Clickjacking</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <img class="first-slide" src="http://placehold.it/800x200/222222/222222" width="100%" alt="First slide">
+                <img class="first-slide" src="img/sh2.jpg" width="100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Cross-Site Scripting</h1>
                         <p>Introduction Cross-Site Scripting & Defense, Cross-Site Request Forgery & Defense.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Check out Examples</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#cross-site-scripting" role="button">Check out Examples</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <img class="first-slide" src="http://placehold.it/800x200/222222/222222" width="100%" alt="First slide">
+                <img class="first-slide" src="img/sh1.jpg" width="100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>SQL Injection</h1>
                         <p>Introduction to SQL Injection.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Check out SQL Examples</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#sql-injection" role="button">Check out SQL Examples</a></p>
                     </div>
                 </div>
             </div>
@@ -126,20 +127,20 @@
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="http://placehold.it/140/3E8F3E/ffffff?text=CJ" alt="Generic placeholder image" width="140" height="140">
             <h2>ClickJacking</h2>
-            <p>ClickJacking examples... ..  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p>ClickJacking examples shown in the below sections.  Check them out!!!</p>
+            <p><a class="btn btn-warning" href="#jacking" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="http://placehold.it/140/6EC5F3/ffffff?text=CSS" alt="Generic placeholder image" width="140" height="140">
             <h2>Cross-Site Scripting</h2>
-            <p>Cross-Site Scripting ... st non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p>Cross-Site Scripting examples and things to be aware of with HTTP Requests. </p>
+            <p><a class="btn btn-warning" href="#cross-site-scripting" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center">
             <img class="img-circle" src="http://placehold.it/140/F2847F/ffffff?text=SQL" alt="SQL" width="140" height="140">
             <h2>SQL Injection</h2>
-            <p>SQL Injection...  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <p>SQL Injection is more common than you think.  Check out examples of how to avoid this cyber security threat!</p>
+            <p><a class="btn btn-warning" href="#sql-injection" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -150,11 +151,12 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Click Jacking. <span class="text-muted">How to avoid it..</span></h2>
+            <p class="lead">Clickjacking, also known as a "UI redress attack", is when an attacker uses multiple transparent or opaque layers to trick a user into clicking on a button or link on another page when they were intending to click on the the top level page. Thus, the attacker is "hijacking" clicks meant for their page and routing them to another page, most likely owned by another application, domain, or both. (1)</p>
+            <a class="btn btn-primary btn-lg" href="https://www.owasp.org/index.php/Clickjacking">Reference Link</a>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MTY0MWNhODgzIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUxNjQxY2E4ODMiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+            <img class="featurette-image img-responsive center-block" width="240" src="img/cybericon2.png">
         </div>
     </div>
 
@@ -162,11 +164,12 @@
 
     <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Cross-Site Scripting. <span class="text-muted">Beware.</span></h2>
+            <p class="lead">Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted web sites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. Flaws that allow these attacks to succeed are quite widespread and occur anywhere a web application uses input from a user within the output it generates without validating or encoding it. (2)</p>
+            <a class="btn btn-primary btn-lg" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Reference Link</a>
         </div>
         <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MTY0MWQxODQyIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUxNjQxZDE4NDIiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+            <img class="featurette-image img-responsive center-block" width="240" src="img/cybericon3.png">
         </div>
     </div>
 
@@ -174,21 +177,22 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">SQL Injection. <span class="text-muted">Learn how to avoid.</span></h2>
+            <p class="lead">A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application. A successful SQL injection exploit can read sensitive data from the database, modify database data (Insert/Update/Delete), execute administration operations on the database (such as shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some cases issue commands to the operating system. SQL injection attacks are a type of injection attack, in which SQL commands are injected into data-plane input in order to effect the execution of predefined SQL commands. (3)</p>
+            <a class="btn btn-primary btn-lg" href="https://www.owasp.org/index.php/SQL_Injection">Reference Link</a>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MTY0MWM5ZWM4IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUxNjQxYzllYzgiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+            <img class="featurette-image img-responsive center-block" width="240" src="img/cybericon1.png">
         </div>
     </div>
-
-    <hr class="featurette-divider">
-
 </div>
+<br>
 
 
+<div class="container-fluid" style="background-color:#002d4d; color:#ffffff">
+    <h1 class="text-center" id="jacking">ClickJacking Example</h1><br>
+</div>
 <div class="container">
-    <h1 class="text-center">Website is vulnerable to ClickJacking!</h1><hr>
     <div class="col-xs-12">
         <div class="col-xs-6">
             <h3 style="color:#FF6F6F">Example of ClickJacking site that is vulnerable.</h3><br><hr>
@@ -201,6 +205,39 @@
         </div>
     </div>
     <br>
+</div>
+
+<div class="container-fluid" id="cross-site-scripting" style="background-color:#00538f; color:#ffffff">
+    <h1 class="text-center">Cross-Site Scripting Example</h1><br>
+</div>
+<div class="container">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <h2>The best way to search for Cross-Site Scripting is to run your site through a scanning tool such as <a href="http://www.powermapper.com/products/sortsite/">Sort Site</a>. You'll also want to turn off any HTTP TRACE support on your webservers.</h2>
+        <h3 class="text-center bg-success">Cross-Site Scripting Example</h3>
+        <p>Cross-Site Scripting attacks don't always require script tags. They can be loaded in attributes of the body, div, or other html element</p>
+        <code>&ltbody onload=alert('testing123')&gt </code><br><br>
+        <code>&ltdiv class="col-xs-12" onerror=alert(document.cookie);&gt</code><br><br>
+        <img class="text-center" width="100%" src="img/jackie-banner-blog1.jpg">
+    </div>
+</div>
+
+<div class="container-fluid" id="sql-injection" style="background-color:#002d4d; color:#ffffff">
+    <h1 class="text-center">SQL Injection Example</h1><br>
+</div>
+<div class="col-xs-12">
+    <div class="col-xs-12">
+        <h1 class="bg-success text-center">SQL Injection Example coming soon...</h1>
+    </div>
+    <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+        <img class="text-center" width="100%" src="img/new-banner-img1.jpg">
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
     <div class="col-xs-12">
         <div class="col-xs-6">
             <h3>Examples</h3><hr>
@@ -212,14 +249,16 @@
         </div>
         <div class="col-xs-6">
             <h3>References</h3><hr>
-            <ul>
+            <ol>
                 <li><a href="https://www.owasp.org/index.php/Testing_for_Clickjacking_(OTG-CLIENT-009)">Testing for Clickjacking</a></li>
                 <li><a href="https://www.owasp.org/index.php/Cross-site_scripting">Cross-Site Scripting</a></li>
                 <li><a href="https://www.owasp.org/index.php/SQL_injection">SQL Injection</a></li>
-            </ul>
+            </ol>
         </div>
     </div>
 </div>
+<br>
+
 
 <div class="footer">
     <div style="background-color:#277075" class="container-fluid">
